@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@drawable/place" />
+
+        <TextView
+            android:id="@+id/zlphdetail_item_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:gravity="center"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/zlphdetail_item_aomc"
+            style="@style/TextStyle" />
+
+        <TextView
+            android:id="@+id/zlphdetail_item_mSio2"
+            style="@style/TextStyle" />
+
+        <TextView
+            android:id="@+id/zlphdetail_item_mAl2o3"
+            style="@style/TextStyle" />
+
+        <TextView
+            android:id="@+id/zlphdetail_item_mFe2o3"
+            style="@style/TextStyle" />
+
+        <TextView
+            android:id="@+id/zlphdetail_item_mCao"
+            style="@style/TextStyle" />
+
+        <TextView
+            android:id="@+id/zlphdetail_item_mMgo"
+            style="@style/TextStyle" />
+    </LinearLayout>
+
+    <include layout="@layout/right_arrow"></include>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tab.homedetail.AfterWarning">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        style="@style/TitleHeight">
+
+        <TextView
+            style="@style/TitleName"
+            android:text="生产计划" />
+
+        <include layout="@layout/back_base"></include>
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

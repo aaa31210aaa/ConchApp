@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="tab.homedetail.earlywarningdetail.AlarmDetail">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        style="@style/TitleHeight">
+
+        <TextView
+            android:id="@+id/alarm_detail_title"
+            style="@style/TitleName"
+            android:text="" />
+
+        <include layout="@layout/back_base"></include>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/alarm_detail_tilte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x20"
+                android:text="预警名称"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/x15" />
+            <TextView
+                android:id="@+id/alarm_detail_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="等级" />
+
+            <TextView
+                android:id="@+id/alarm_detail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="发布时间" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_margin="@dimen/x10"
+                android:background="@color/gray_deep" />
+
+            <TextView
+                android:id="@+id/alarm_detail_memo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:text="详情" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

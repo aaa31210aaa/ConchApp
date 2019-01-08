@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="tab.homedetail.noticedetail.NoticeDetail">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        style="@style/TitleHeight">
+
+        <TextView
+            style="@style/TitleName"
+            android:text="公告详情" />
+
+        <include layout="@layout/back_base"></include>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notice_detail_tilte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x20"
+                android:text=""
+                android:textSize="@dimen/x13" />
+
+            <TextView
+                android:id="@+id/notice_detail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_margin="@dimen/x10"
+                android:background="@color/gray_deep" />
+
+            <TextView
+                android:id="@+id/notice_detail_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:text="" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

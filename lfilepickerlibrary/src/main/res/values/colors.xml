@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#92B4F4</color>
+    <color name="colorPrimaryDark">#92B4F4</color>
+    <color name="colorAccent">#92B4F4</color>
+    <color name="dialog_color">#ff4081</color>
+    <color name="gray">#cccccc</color>
+    <color name="lightgray">#dddddd</color>
+    <color name="white">#fff</color>
+    <color name="defaultColor">#92B4F4</color>
+    <color name="main_color">#1195db</color>
+    <color name="gray_deep">#888888</color>
+</resources>

@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tab.prodetail.MineralZlph">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/mineral_before"
+            android:layout_width="75px"
+            android:layout_height="80px"
+            android:layout_marginRight="80px"
+            android:background="@drawable/date_reduce" />
+
+        <TextView
+            android:id="@+id/mineral_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="@dimen/SubTitleSize" />
+
+        <ImageButton
+            android:id="@+id/mineral_next"
+            android:layout_width="75px"
+            android:layout_height="80px"
+            android:layout_marginLeft="80px"
+            android:background="@drawable/date_add" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:layout_marginTop="20px"
+        android:background="@color/main_color"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/mineral_search_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20px"
+            android:background="@drawable/searchview_yb"
+            android:completionThreshold="2"
+            android:drawableLeft="@drawable/msearch"
+            android:hint="@string/input_search"
+            android:maxLines="1"
+            android:paddingLeft="20px"
+            android:paddingRight="100px"
+
+            android:textColorHint="@color/gray_deep" />
+
+        <ImageView
+            android:id="@+id/mineral_search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:background="@drawable/clear"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/mineral_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnableHeaderTranslationContent="true"
+        app:srlEnableLoadmore="false"
+        app:srlPrimaryColor="@color/refresh_bg">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mineral_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

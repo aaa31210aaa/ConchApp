@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.example.administrator.conchapp"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 4
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库（不需要的删除即可）。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "0cd5ae9619f92b371aa1a729", //JPush上注册的包名对应的appkey
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+
+//        jackOptions {
+//            enabled true
+//        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('conchapp.jks')
+            storePassword "123123"
+            keyAlias "conchapp"
+            keyPassword "123123"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //如果使用了特殊的Header
+    implementation project(':lfilepickerlibrary')
+    //noinspection GradleCompatible
+
+    //    compile 'com.android.support:appcompat-v7:25.3.1'
+
+    //    compile 'com.zhy:autolayout:1.4.5'
+    implementation files('libs/nineoldandroids-2.4.0.jar')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'cn.bingoogolapple:bga-refreshlayout:1.1.6@aar'
+    implementation 'com.jakewharton:butterknife:8.7.0'
+    implementation 'com.lzy.net:okgo:3.0.4'
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    implementation 'com.yanzhenjie:permission:1.0.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.25'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.2-alpha-8'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.2-alpha-8'
+    implementation 'com.github.hackware1993:MagicIndicator:1.5.0'
+    implementation 'com.github.ybq:Android-SpinKit:1.1.0'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    implementation 'cn.bingoogolapple:bga-badgeview:1.1.3@aar'
+    implementation 'com.contrarywind:Android-PickerView:3.2.6'
+    implementation 'com.yanzhenjie:recyclerview-swipe:1.1.4'
+    implementation 'cn.jiguang.sdk:jpush:3.0.3'
+    implementation 'cn.jiguang.sdk:jcore:1.1.1'
+    testImplementation 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
+}

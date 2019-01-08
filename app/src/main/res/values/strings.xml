@@ -1,0 +1,49 @@
+<resources>
+    <!--<string name="app_name">露天矿MES</string>-->
+    <string name="app_name">全椒海螺</string>
+    <string name="welcome_title">全椒海螺数字矿山系统</string>
+    <!--<string name="welcome_title">露天矿生产执行系统</string>-->
+    <string name="file_name">ConchApp</string>
+    <string name="click_agin">再按一次退出应用</string>
+    <string name="network_connection_failed">请检查网络...</string>
+    <string name="loading_write">请稍后...</string>
+    <string name="NotEmpty">账号或者密码不能为空</string>
+    <string name="login_success">登陆成功</string>
+    <string name="mine_cancellation_dialog_title">注销</string>
+    <string name="mine_cancellation_dialog_content">请问是否要注销此账号</string>
+    <string name="mine_cancellation_dialog_btn1">取消</string>
+    <string name="mine_cancellation_dialog_btn2">确定</string>
+    <string name="network_error">连接失败</string>
+    <string name="loading">加载中...</string>
+    <string name="refreshed">刷新完成</string>
+    <string name="netcantuse">网络不可用</string>
+    <string name="HintText">请输入关键词...</string>
+    <string name="CameraErr">拍照失败，需要开启相机权限</string>
+    <string name="PleaseWriteAccount">请填写账号</string>
+    <string name="PleaseWritePwd">请填写密码</string>
+    <string name="loadSuccess">加载完成</string>
+    <string name="refreshSuccess">刷新完成</string>
+    <string name="input_search">请输入关键字搜索</string>
+    <string name="connect_err">连接失败，请检查网络</string>
+    <string name="connect_dateErr">获取数据失败</string>
+    <string name="nosdcard">没有找到SD卡</string>
+    <string name="getPermissionErr">获取权限失败</string>
+    <string name="oldpwdEmpty">请填写原始密码</string>
+    <string name="newpwdEmpty">请填写新密码</string>
+    <string name="samenewpwd">两次填写的新密码不一致</string>
+    <string name="oldpwd_err">原始密码不正确</string>
+    <string name="sameOldNew">新密码不能与原密码相同</string>
+    <string name="hiddenPwd">隐藏密码</string>
+    <string name="displayPwd">显示密码</string>
+    <string name="getMessageErr">获取消息数量失败</string>
+    <string name="isSave">保存提示</string>
+    <string name="SaveMessage">请问是否保存，保存后将不能修改</string>
+    <string name="delete_title">删除</string>
+    <string name="delete_content">是否确认删除</string>
+    <string name="update_title">海螺数字矿山版本更新</string>
+    <string name="updatecontent"></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="xcxj">
+        <item>相机</item>
+        <item>从相册中选择</item>
+        <item>取消</item>
+    </string-array>
+
+    <string-array name="shift_arr">
+        <item>白班</item>
+        <item>中班</item>
+        <item>晚班</item>
+    </string-array>
+
+    <string-array name="blasthole_group">
+        <item>已分组</item>
+        <item>未分组</item>
+    </string-array>
+</resources>

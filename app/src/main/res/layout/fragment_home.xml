@@ -1,0 +1,151 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="tab.Home">
+
+        <TextView
+            android:id="@+id/title_name"
+            style="@style/MmTitleTextSize"
+            android:text="首页" />
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/homeBanner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x140"
+            android:layout_below="@+id/title_name"
+            app:canLoop="true">
+
+        </com.bigkoo.convenientbanner.ConvenientBanner>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/homeRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homeBanner">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/adddate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homeRv"
+            android:layout_marginTop="@dimen/x10"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/fragment_home_date_before"
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x25"
+                android:layout_marginRight="@dimen/x50"
+                android:background="@drawable/date_reduce" />
+
+            <TextView
+                android:id="@+id/fragment_home_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textSize="@dimen/SubTitleSize" />
+
+            <ImageButton
+                android:id="@+id/fragment_home_date_next"
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x25"
+                android:layout_marginLeft="@dimen/x50"
+                android:background="@drawable/date_add" />
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/htv_tj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adddate">
+
+            <RadioGroup
+                android:id="@+id/home_tj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:orientation="horizontal">
+
+                <!--<Spinner-->
+                <!--android:id="@+id/spinner_test"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:spinnerMode="dropdown"-->
+                <!--android:overlapAnchor="false"-->
+                <!--/>-->
+
+            </RadioGroup>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/home_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/htv_tj"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/x20"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="爆落量:"
+                    android:textSize="@dimen/MainText" />
+
+                <TextView
+                    android:id="@+id/home_explosion_volume"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/x20"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="存矿量:"
+                    android:textSize="@dimen/MainText" />
+
+                <TextView
+                    android:id="@+id/home_ore_storage_capacity"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="tab.formdetail.XhtjFormDetail">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        style="@style/TitleHeight">
+
+        <TextView
+            android:id="@+id/xhtjform_detail_title"
+            style="@style/TitleName"
+            android:text="" />
+
+        <include layout="@layout/back_base"></include>
+
+        <TextView
+            android:id="@+id/xhtjform_detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x10"
+            android:gravity="center"
+            android:text="2017-09-06"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x13" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/weektv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="20px"-->
+        <!--android:text="周"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:visibility="invisible"-->
+        <!--/>-->
+    </RelativeLayout>
+
+    <include layout="@layout/search_view"></include>
+
+    <include layout="@layout/refresh_rv"></include>
+
+
+</LinearLayout>

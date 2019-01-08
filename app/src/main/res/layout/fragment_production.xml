@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/production_title"
+        style="@style/MmTitleTextSize"
+        android:text="计划" />
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/production_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_below="@id/production_title" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/production_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/production_indicator">
+
+    </android.support.v4.view.ViewPager>
+
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/production_title">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="20px"-->
+    <!--android:layout_marginTop="20px"-->
+    <!--android:gravity="center"-->
+    <!--android:text="年计划"-->
+    <!--android:textColor="@color/main_color"-->
+    <!--android:textSize="@dimen/MainText" />-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/production_yplan"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:background="@color/black" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="20px"-->
+    <!--android:layout_marginTop="20px"-->
+    <!--android:gravity="center"-->
+    <!--android:text="季度计划"-->
+    <!--android:textColor="@color/main_color"-->
+    <!--android:textSize="@dimen/MainText" />-->
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/production_qplan"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:background="@color/black" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="20px"-->
+    <!--android:layout_marginTop="20px"-->
+    <!--android:gravity="center"-->
+    <!--android:text="月计划"-->
+    <!--android:textColor="@color/main_color"-->
+    <!--android:textSize="@dimen/MainText" />-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/production_mplan"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:background="@color/black" />-->
+    <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+</RelativeLayout>

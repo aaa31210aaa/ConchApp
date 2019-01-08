@@ -1,0 +1,183 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--加载窗口的样式-->
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 登陆check框 -->
+    <style name="CustomCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+    <!--主界面tab切换卡样式-->
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabTextColor">@color/tabtv_unselect</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabSelectedTextColor">@color/main_color</item>
+    </style>
+
+    <!--页面标题-->
+    <style name="MmTitleTextSize">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/x40</item>
+        <item name="android:textSize">@dimen/x15</item>
+        <item name="android:background">@color/main_color</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--用户选择照片的dialog-->
+    <style name="my_dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--dialog加载-->
+    <style name="dialogstyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <!--标题栏样式-->
+    <style name="TitleHeight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/x40</item>
+        <item name="android:background">@color/main_color</item>
+    </style>
+
+    <!--标题名字样式-->
+    <style name="TitleName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">@dimen/x15</item>
+    </style>
+
+    <!--右箭头-->
+    <style name="RightArrow">
+        <item name="android:layout_width">@dimen/x20</item>
+        <item name="android:layout_height">@dimen/x20</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/x5</item>
+        <item name="android:background">@drawable/right</item>
+    </style>
+
+    <!--返回箭头-->
+    <style name="BackBase">
+        <item name="android:layout_width">70px</item>
+        <item name="android:layout_height">70px</item>
+        <item name="android:background">@drawable/back</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">10px</item>
+
+
+    </style>
+
+    <!--Toolbar标题样式-->
+    <style name="ToolBarBaseTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--Toolbar副标题样式-->
+    <style name="ToolBarBaseSubTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:padding">15px</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15px</item>
+    </style>
+
+    <style name="PlanTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">10px</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SearchRl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">150px</item>
+        <item name="android:background">@color/main_color</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+
+
+    <style name="BaseDialog" parent="android:Theme.Light">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_corner</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="LedgerEditext">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">7</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/x7</item>
+        <item name="android:background">@drawable/editext_yb</item>
+        <item name="android:textSize">@dimen/x13</item>
+        <item name="android:textColorHint">@color/gray</item>
+    </style>
+
+    <style name="ledger_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableLeft">@drawable/ledger_img</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/x8</item>
+    </style>
+
+    <style name="horline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/x1</item>
+        <item name="android:background">@color/gray_deep</item>
+    </style>
+</resources>

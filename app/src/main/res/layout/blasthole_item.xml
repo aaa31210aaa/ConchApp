@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/project_name"
+            style="@style/TextStyle"
+            android:padding="@dimen/x5" />
+
+        <TextView
+            android:id="@+id/blasthole_num"
+            style="@style/TextStyle"
+            android:padding="@dimen/x5" />
+
+        <TextView
+            android:id="@+id/grouping"
+            style="@style/TextStyle"
+            android:padding="@dimen/x5" />
+        <TextView
+            android:id="@+id/uploadtime"
+            style="@style/TextStyle"
+            android:padding="@dimen/x5" />
+    </LinearLayout>
+
+    <ImageView style="@style/RightArrow" />
+</LinearLayout>

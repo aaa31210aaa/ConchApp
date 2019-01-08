@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_back"
+    android:layout_width="@dimen/x23"
+    android:layout_height="@dimen/x23"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="@dimen/x5"
+    android:background="@drawable/back">
+
+
+</ImageView>

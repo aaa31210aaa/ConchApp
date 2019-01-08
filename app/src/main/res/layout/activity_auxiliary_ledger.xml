@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="tab.homedetail.ledger.AuxiliaryLedger">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        style="@style/TitleHeight">
+
+        <TextView
+            style="@style/TitleName"
+            android:text="辅助产量台帐" />
+
+        <include layout="@layout/back_base"></include>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x10"
+            android:gravity="center"
+            android:text="提交审批"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/date_bc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_rl"
+        android:layout_margin="@dimen/x5"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/scrq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生产日期：" />
+
+        <TextView
+            android:id="@+id/production_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/modify_password_style"
+            android:gravity="center"
+            android:padding="@dimen/x5"
+            android:text=""
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/bc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_toRightOf="@id/production_date"
+            android:text="班次：" />
+
+        <Spinner
+            android:id="@+id/shift"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/shift_arr"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <include layout="@layout/search_view"></include>
+
+    <include layout="@layout/refresh_rv"></include>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_fbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/add"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="#33728dff" />
+</RelativeLayout>

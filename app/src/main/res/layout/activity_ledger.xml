@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="tab.homedetail.Ledger">
+
+
+    <RelativeLayout
+        android:id="@+id/title"
+        style="@style/TitleHeight">
+
+        <TextView
+            style="@style/TitleName"
+            android:text="台账" />
+
+        <include layout="@layout/back_base"></include>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/perforation_ledger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/ledger_text"
+            android:text="穿孔台账" />
+
+        <ImageView style="@style/horline" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/forklift_ledger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/ledger_text"
+            android:text="铲装台帐" />
+
+        <ImageView style="@style/horline" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/truck_ledger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/ledger_text"
+            android:text="卡车运输台帐" />
+
+        <ImageView style="@style/horline" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blast_ledger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/ledger_text"
+            android:text="爆破台账" />
+
+        <ImageView style="@style/horline" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/crusher_ledger_production"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+
+            style="@style/ledger_text"
+            android:text="破碎台账(生产)" />
+
+        <ImageView style="@style/horline" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/crusher_ledger_electricity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/ledger_text"
+            android:text="破碎台账(巡检)" />
+
+        <ImageView style="@style/horline" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/transfer_ledger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/ledger_text"
+            android:text="矿石转运台帐" />
+
+        <ImageView style="@style/horline" />
+    </LinearLayout>
+    <!--<TextView-->
+    <!--android:id="@+id/rotor_ledger"-->
+    <!--style="@style/ledger_text"-->
+    <!--android:text="转子台帐" />-->
+
+    <!--<ImageView style="@style/horline" />-->
+    <LinearLayout
+        android:id="@+id/auxiliary_ledger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            style="@style/ledger_text"
+            android:text="辅助产量台帐" />
+
+        <ImageView style="@style/horline" />
+    </LinearLayout>
+
+</LinearLayout>

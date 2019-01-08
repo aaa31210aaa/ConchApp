@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="workAdress">
+        <item>地点1</item>
+        <item>地点2</item>
+        <item>地点3</item>
+        <item>地点4</item>
+        <item>地点5</item>
+        <item>地点6</item>
+        <item>地点7</item>
+        <item>地点8</item>
+        <item>地点9</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/place" />
+
+        <TextView
+            android:id="@+id/kcjhdetail_item_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6666" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px">
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:padding="10px"
+                android:text="" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="保有矿量" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="采准矿量" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="可采矿量" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="年初矿量" />
+
+            <TextView
+                android:id="@+id/slphdetail_item_ncbyl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="测试" />
+
+            <TextView
+                android:id="@+id/slphdetail_item_ncczl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="测试" />
+
+            <TextView
+                android:id="@+id/slphdetail_item_nckzl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="测试" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="保有期限" />
+
+            <TextView
+                android:id="@+id/slphdetail_item_ncbylqx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="测试" />
+
+            <TextView
+                android:id="@+id/slphdetail_item_ncczlqx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="测试" />
+
+            <TextView
+                android:id="@+id/slphdetail_item_nckzlqx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="测试" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="年底矿量" />
+
+            <TextView
+                android:id="@+id/slphdetail_item_nmbyl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="测试" />
+
+            <TextView
+                android:id="@+id/slphdetail_item_nmczl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="测试" />
+
+            <TextView
+                android:id="@+id/slphdetail_item_nmkzl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="测试" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="保有期限" />
+
+            <TextView
+                android:id="@+id/slphdetail_item_nmbylqx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="测试" />
+
+            <TextView
+                android:id="@+id/slphdetail_item_nmczlqx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="测试" />
+
+            <TextView
+                android:id="@+id/slphdetail_item_nmkzlqx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="测试" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
